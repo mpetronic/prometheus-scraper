@@ -49,7 +49,7 @@ public class PrometheusScraper {
         }
         this.url = new URL("http", host, port, context);
         this.knownDataFormat = null;
-        log.debugf("Will scrape Permetheus data from URL [%s]", this.url);
+        log.debugf("Will scrape Prometheus data from URL [%s]", this.url);
     }
 
     public PrometheusScraper(URL url) {
@@ -75,7 +75,7 @@ public class PrometheusScraper {
         }
         this.url = url;
         this.knownDataFormat = dataFormat;
-        log.debugf("Will scrape Permetheus data from URL [%s] with data format [%s]",
+        log.debugf("Will scrape Prometheus data from URL [%s] with data format [%s]",
                 this.url, (this.knownDataFormat == null) ? "<TBD>" : this.knownDataFormat);
     }
 
@@ -102,7 +102,7 @@ public class PrometheusScraper {
 
         this.knownDataFormat = dataFormat;
 
-        log.debugf("Will scrape Permetheus data from file [%s] with data format [%s]", this.url,
+        log.debugf("Will scrape Prometheus data from file [%s] with data format [%s]", this.url,
                 this.knownDataFormat);
     }
 
